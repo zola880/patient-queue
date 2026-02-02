@@ -123,15 +123,15 @@ const StaffDashboard = () => {
                   <td>
                     <button
                       onClick={() => handleAction(p.token, 'call')}
-                      style={{ backgroundColor: '#28a745', color: '#fff', padding: '8px', border: 'none', borderRadius: '4px' }}
+                      style={{ backgroundColor: '#757b82', color: '#fff', padding: '8px', border: 'none', borderRadius: '4px' }}
                     >
                       CALL NOW
                     </button>
                     <button
                       onClick={() => handleAction(p.token, 'remove')}
-                      style={{ backgroundColor: '#dc3545', color: '#fff', padding: '8px', border: 'none', borderRadius: '4px', marginLeft: '5px' }}
+                      style={{ backgroundColor: '#978889', color: '#fff', padding: '8px', border: 'none', borderRadius: '4px', marginLeft: '5px' }}
                     >
-                      FINISH
+                      Skip
                     </button>
                   </td>
                 </tr>
