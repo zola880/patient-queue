@@ -1,0 +1,70 @@
+/* Container - Centers the card on the screen */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align to top so long lists don't cut off */
+  min-height: 100vh;
+  padding: 40px 20px;
+  background-color: #f0f2f5;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Main Card - Holds everything in a vertical column */
+.card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column; /* FORCES VERTICAL STACKING */
+  gap: 30px; /* Adds space between the table and the inbox */
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px; /* Adds space between rows */
+  margin-top: 15px;
+}
+
+th {
+  text-align: left;
+  padding: 12px;
+  color: #666;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+td {
+  padding: 15px;
+  background: #f8f9fa;
+}
+
+/* Rounding the corners of table rows */
+td:first-child { border-radius: 8px 0 0 8px; }
+td:last-child { border-radius: 0 8px 8px 0; }
+
+/* Urgent Row - High Contrast */
+.urgent-row td {
+  background-color: #ffe3e3;
+  color: #c92a2a;
+  border: 1px solid #ffa8a8;
+}
+
+/* Inbox Section - Placed below the table */
+.inbox-section {
+  border-top: 2px solid #eee;
+  padding-top: 20px;
+}
+
+.message-item {
+  background: #fff;
+  border: 1px solid #e9ecef;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}

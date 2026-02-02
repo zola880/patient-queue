@@ -1,0 +1,77 @@
+/* THE MAIN PAGE - NO BACKGROUND COLOR DIFFERENCES */
+.contact-page {
+  display: flex;
+  flex-direction: row;
+  min-height: 90vh;
+  background-color: #ffffff; /* PURE CLEAN WHITE */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0 10%; /* ADDS BREATHING ROOM ON THE SIDES */
+}
+
+/* LEFT SIDE - REMOVED SOLID BACKGROUND */
+.contact-info {
+  flex: 1;
+  background: none; /* REMOVED THE BLUE BOX */
+  color: #333; /* CHANGED TO DARK TEXT FOR READABILITY */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 50px;
+}
+
+.contact-info h2 {
+  font-size: 3.5rem;
+  color: #5abfcc;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+/* RIGHT SIDE - REMOVED ALL CARD STRUCTURE */
+.contact-form-area {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  background: none;
+}
+
+form {
+  width: 100%;
+}
+
+/* MINIMALIST UNDERLINE INPUTS */
+input, textarea {
+  width: 100%;
+  padding: 15px 0; /* REMOVED SIDE PADDING */
+  margin-bottom: 40px;
+  border: none;
+  border-bottom: 1px solid #ccc; /* VERY THIN, LIGHT LINE */
+  font-size: 1.2rem;
+  background: transparent;
+  transition: border-color 0.4s;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-bottom: 2px solid #5abfcc; /* COLOR ONLY APPEARS WHEN TYPING */
+}
+
+/* BUTTON WITHOUT A BOX - TEXT STYLE */
+button {
+  background: none;
+  color: #5abfcc;
+  padding: 10px 0;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+button:hover {
+  color: #333;
+  border-bottom: 2px solid #333; /* LINE APPEARS ON HOVER */
+}

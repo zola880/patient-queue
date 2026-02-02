@@ -1,0 +1,11 @@
+/* Clean root layout – professional apps */
+
+#root {
+  min-height: 100vh;
+}
+
+/* Remove Vite demo styles */
+.logo,
+.read-the-docs {
+  display: none;
+}

@@ -1,0 +1,129 @@
+/* General Styling */
+body {
+  background-color: #ffffff; /* Pure white for a clean look */
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* Container Layout */
+.home-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* 1. MINIMALIST HERO */
+.hero {
+  padding: 80px 0 40px 0;
+  border-bottom: 2px solid #000; /* Bold human touch */
+  text-align: left; /* AI usually centers everything; left-align feels more manual */
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #0f4c75;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* 2. THE CONTENT SPLIT (Magazine Style) */
+.home-container {
+  display: flex;
+  gap: 60px;
+  margin-top: 50px;
+}
+
+/* Left Navigation Sidebar */
+.sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar-label {
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #bbb;
+  margin-bottom: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 600;
+  padding: 5px 0;
+  border-bottom: 1px solid transparent;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid #3282b8;
+}
+
+/* 3. THE LIST FEED (Replacing Cards) */
+.card-grid {
+  flex: 3;
+  display: flex;
+  flex-direction: column; /* Stacked vertically, no grid */
+  gap: 0; /* Remove gaps to use borders instead */
+}
+
+.card {
+  background: none; /* Removed background */
+  box-shadow: none; /* Removed shadow */
+  border: none;
+  border-bottom: 1px solid #877f7f; /* Simple line separator */
+  padding: 30px 0;
+  border-radius: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: padding-left 0.3s ease;
+  background: linear-gradient(rgb(78, 183, 122),rgb(85, 200, 31));
+}
+
+
+
+.card-text-content {
+  max-width: 70%;
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Call to Action Arrow */
+.arrow-icon {
+  font-size: 1.5rem;
+  color: #0f4c75;
+}
+
+/* Special Rows */
+.card.emergency h3 {
+  color: #d9534f;
+  
+}
+
+/* 4. FOOTER */
+.footer {
+  margin-top: 100px;
+  padding: 40px 0;
+  border-top: 1px solid #eee;
+  font-size: 0.8rem;
+  color: #6b7f80;
+}
