@@ -6,7 +6,7 @@ const Register = () => {
   const [timeLeft, setTimeLeft] = useState('');
 
   const OPEN_HOUR = 2;
-  const CLOSE_HOUR = 24; // 6 PM (Changed from 28 to 18 for standard 24h clock)
+  const CLOSE_HOUR = 18; // 6 PM (Changed from 28 to 18 for standard 24h clock)
 
   const currentHour = new Date().getHours();
   const isOpen = currentHour >= OPEN_HOUR && currentHour < CLOSE_HOUR;

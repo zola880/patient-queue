@@ -26,7 +26,7 @@ const Home = () => {
             <p>Check your current position in the queue</p>
           </Link>
 
-          <Link to="/emergency" className="card emergency">
+          <Link to="/register?emergency=true" className="card emergency">
             <h3>Emergency</h3>
             <p>Immediate priority access</p>
           </Link>
